@@ -28,8 +28,8 @@ void setup() {
   pinMode(in1_2, OUTPUT);
   pinMode(in2_2, OUTPUT);
 
-  pinMode(RM_INT2, INPUT);
-  pinMode(LM_INT2, INPUT);
+  pinMode(RM_INT2, INPUT_PULLUP);
+  pinMode(LM_INT2, INPUT_PULLUP);
   
   pinMode(LM_INT1, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(LM_INT1), counterL, RISING);
