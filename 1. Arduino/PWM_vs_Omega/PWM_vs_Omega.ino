@@ -12,14 +12,14 @@ void loop() {
 }
 float PWM(float w,char motor){
   float pwm;
-  if (w == 0){
+  if (w <= 0.1){
     pwm = 0; 
-  }
-  if (motor == "L"){
-    pwm = -1.9765702*pow(w,2) + 34.70570173*w + 24.1273073;
-  }
-  else{
-    pwm = -5.55509933*pow(w,2) + 43.87695327*w + 22.18873416;
+    if (motor == "L"){
+      pwm = -1.9765702*pow(w,2) + 34.70570173*w + 24.1273073;
+    }
+    else{
+      pwm = -5.55509933*pow(w,2) + 43.87695327*w + 22.18873416;
+    }
   }
   return pwm;
 }
