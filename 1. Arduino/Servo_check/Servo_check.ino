@@ -1,5 +1,5 @@
 #include <Servo.h>;
-#define boxservo 6
+#define boxservo 7
 Servo box_servo;
 void setup() {
   // put your setup code here, to run once:
@@ -9,12 +9,14 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  for (int i=0; i <= 100; i++){
+  for (int i=0; i <= 10; i++){
     box_servo.write(i);
     delay(10);
   }
-  for (int i=100; i >= 0; i--){
+  delay(1000);
+  for (int i=10; i >= 0; i--){
     box_servo.write(i);
     delay(10);
   }
+  delay(5000);
 }
