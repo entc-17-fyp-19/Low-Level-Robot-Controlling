@@ -1,5 +1,5 @@
-#define ECHO 8
-#define TRIG 9
+#define ECHO 9
+#define TRIG 8
 
 void setup() {
   // put your setup code here, to run once:
@@ -18,10 +18,16 @@ void loop() {
   delayMicroseconds(20);
   digitalWrite(TRIG, LOW);
 
-  float dis = pulseIn(ECHO,HIGH, 200000);
+  float dis = pulseIn(ECHO,HIGH, 30000);
   dis = (dis/2)*0.0343;
 
-  Serial.print(dis);
-  Serial.println("    cm");
-  delay(50);
+  if (dis != 0){
+//    Serial.print(dis);
+//    Serial.println("    cm");
+    Serial.println("1");
+  }
+  else{
+    Serial.println("0");
+  }
+  
 }

@@ -74,50 +74,50 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   // mode
-  if (L_Btn == HIGH){
-    while (L_Btn == HIGH){
-    }
-    if (mode < 4){
-      mode++;
-    }
-    else {
-      mode = 1;
-    }
-  }
-  if (R_Btn == HIGH){
-    while (R_Btn == HIGH){
-    }
-    if (mode > 2){
-      mode--;
-    }
-    else {
-      mode = 4;
-    }
-  }
-
-  //pos mode
-  if (mode == 2){
-    if (U_Btn == HIGH){
-      while (U_Btn == HIGH){
-      }
-      if (pos_mode == 1){
-        pos_mode = 2;
-      }
-      else {
-        pos_mode = 1;
-      }
-    }
-    if (D_Btn == HIGH){
-      while (D_Btn == HIGH){
-      }
-      if (pos_mode == 1){
-        pos_mode = 2;
-      }
-      else {
-        pos_mode = 1;
-      }
-    }
-  }
+//  if (L_Btn == HIGH){
+//    while (L_Btn == HIGH){
+//    }
+//    if (mode < 4){
+//      mode++;
+//    }
+//    else {
+//      mode = 1;
+//    }
+//  }
+//  if (R_Btn == HIGH){
+//    while (R_Btn == HIGH){
+//    }
+//    if (mode > 2){
+//      mode--;
+//    }
+//    else {
+//      mode = 4;
+//    }
+//  }
+//
+//  //pos mode
+//  if (mode == 2){
+//    if (U_Btn == HIGH){
+//      while (U_Btn == HIGH){
+//      }
+//      if (pos_mode == 1){
+//        pos_mode = 2;
+//      }
+//      else {
+//        pos_mode = 1;
+//      }
+//    }
+//    if (D_Btn == HIGH){
+//      while (D_Btn == HIGH){
+//      }
+//      if (pos_mode == 1){
+//        pos_mode = 2;
+//      }
+//      else {
+//        pos_mode = 1;
+//      }
+//    }
+//  }
 
   User_Mode();
   delay(1000);
